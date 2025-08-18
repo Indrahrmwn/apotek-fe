@@ -1,5 +1,6 @@
 import React from "react";
 import landingImage from "../assets/GenshinlmpactPhoto 2024_12_28 00_09_26.png";
+import { Link } from "react-router-dom";
 
 const LandingPages = () => {
   return (
@@ -15,9 +16,11 @@ const LandingPages = () => {
             Solusi lengkap untuk kebutuhan kesehatan Anda. Kami hadir dengan
             layanan terpercaya dan ramah.
           </p>
-          <button className="bg-green-600 text-white px-10 py-5 rounded-xl text-2xl font-semibold hover:bg-green-700">
-            Mulai Sekarang
-          </button>
+          <Link to="/login">
+            <button className="bg-green-600 text-white px-10 py-5 rounded-xl text-2xl font-semibold hover:bg-green-700">
+              Mulai Sekarang
+            </button>
+          </Link>
         </div>
         <div>
           <img
